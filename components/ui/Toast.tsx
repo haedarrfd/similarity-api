@@ -29,15 +29,15 @@ interface ToastIconProps extends Partial<React.SVGProps<SVGSVGElement>> {
 }
 
 Toast.Icon = function ToastIcon({ name, className, ...props }: ToastIconProps) {
-  const Icon = Icons[name];
+  const IconToast = Icons[name];
 
-  if (!Icon) {
+  if (!IconToast) {
     return null;
   }
 
   return (
     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-100">
-      <Icon className={cn("h-10 w-10", className)} {...props} />
+      <IconToast className={cn("h-10 w-10", className)} {...props} />
     </div>
   );
 };
