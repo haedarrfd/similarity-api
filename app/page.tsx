@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import LargeHeading from "@/components/ui/LargeHeading";

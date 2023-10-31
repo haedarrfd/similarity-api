@@ -5,9 +5,9 @@ import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 
 const redis = new Redis({
-  // @ts-ignore
-  url: process.env.REDIS_URL,
-  token: process.env.REDIS_SECRET,
+  url: "https://apn1-profound-robin-33729.upstash.io",
+  token:
+    "AYPBASQgNmY0MTE3YzYtYTYwYy00NTkwLWI1ZDktYjU0OTA2M2RkMjYxYjk0NDhiNGQzZmNmNDU3NjlkM2ZhYTFjMWMyMmQ5Y2Y=",
 });
 
 const ratelimit = new Ratelimit({

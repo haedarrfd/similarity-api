@@ -24,8 +24,9 @@ export function Toast({ visible, className, ...props }: ToastProps) {
   );
 }
 
-interface ToastIconProps extends Partial<React.SVGProps<SVGSVGElement>> {
+interface ToastIconProps {
   name: keyof typeof Icons;
+  className: string;
 }
 
 Toast.Icon = function ToastIcon({ name, className, ...props }: ToastIconProps) {
