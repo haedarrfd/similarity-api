@@ -17,6 +17,7 @@ const ApiDashboard = async ({}) => {
     where: { userId: user.user.id },
   });
 
+  // find api key that active
   const activeApiKey = apiKeys.find((key) => key.enabled);
   if (!activeApiKey) return notFound();
 

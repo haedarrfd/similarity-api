@@ -38,6 +38,7 @@ const Code: FC<CodeProps> = ({
           }
         }, 13);
 
+        // Untuk membersihkan interval
         return () => clearInterval(intervalId);
       }, animationDelay || 150);
     }
@@ -63,10 +64,12 @@ const Code: FC<CodeProps> = ({
         >
           {tokens.map((line: any, i: number) => {
             const { key, ...rest } = getLineProps({ line, key: i });
+
             return (
               <div key={`line-${i}`} style={{ position: "relative" }} {...rest}>
                 {line.map((token: any, index: number) => {
                   const { key, ...props } = getTokenProps({ token, i });
+
                   return <span key={index} {...props} />;
                 })}
               </div>

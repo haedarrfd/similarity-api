@@ -13,6 +13,7 @@ const SignInButton: FC<SignInButtonProps> = ({}) => {
   const signInWithGoogle = async () => {
     try {
       setIsLoading(true);
+
       await signIn("google");
     } catch (error) {
       toast({

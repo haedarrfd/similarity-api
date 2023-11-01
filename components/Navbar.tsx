@@ -20,7 +20,7 @@ const Navbar = async () => {
           <ThemeToggle />
         </div>
 
-        <div className="hidden md:flex gap-4">
+        <div className="hidden md:flex gap-5">
           <ThemeToggle />
 
           <Link

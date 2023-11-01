@@ -8,7 +8,7 @@ import Code from "./ui/Code";
 
 const DocumentationTabs: FC = () => {
   return (
-    <Tabs defaultValue="nodejs" className="max-w-2xl w-full pb-10">
+    <Tabs defaultValue="nodejs" className="max-w-2xl w-full md:mb-10">
       <TabsList>
         <TabsTrigger value="nodejs">NodeJS</TabsTrigger>
         <TabsTrigger value="python">Python</TabsTrigger>

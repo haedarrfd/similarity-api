@@ -26,7 +26,7 @@ export default function Home() {
             similarity between two pieces of text with a free{" "}
             <Link
               href="/login"
-              className="underline underline-offset-2 text-black dark:text-light-gold"
+              className="underline underline-offset-2 text-dark-gold dark:text-light-gold"
             >
               API key
             </Link>

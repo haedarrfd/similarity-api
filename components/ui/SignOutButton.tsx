@@ -13,6 +13,7 @@ const SignOutButton: FC<SignOutButtonProps> = ({}) => {
   const signUserOut = async () => {
     try {
       setIsLoading(true);
+
       await signOut();
     } catch (error) {
       toast({

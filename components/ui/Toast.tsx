@@ -26,12 +26,11 @@ export function Toast({ visible, className, ...props }: ToastProps) {
 
 interface ToastIconProps {
   name: keyof typeof Icons;
-  className: string;
+  className: any;
 }
 
 Toast.Icon = function ToastIcon({ name, className, ...props }: ToastIconProps) {
   const IconToast = Icons[name];
-
   if (!IconToast) {
     return null;
   }
@@ -60,7 +59,7 @@ Toast.Description = function ToastDescription({
 };
 
 interface ToastOpts {
-  title?: string;
+  title: string;
   message: string;
   type?: "success" | "error" | "default";
   duration?: number;
