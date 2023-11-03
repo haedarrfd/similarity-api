@@ -24,3 +24,13 @@
 .three-d {
   text-shadow: none;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: max-content;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 12px;
+}
